@@ -1,10 +1,10 @@
 import React from 'react';
+import {NavLink} from "react-router-dom";
 
 const TableRow = (props)=>{
     return <tr>
         <th scope="row">{props.index+1}</th>
-        <td>{props.name}</td>
-        <td>{props.lastname}</td>
+        <td><NavLink to={"/profile/"+props.id}>{props.name} {props.lastname}</NavLink></td>
     </tr>
 }
 
@@ -13,7 +13,7 @@ const Friends = (props)=>{
     let usersCount = Object.keys(users).length;
     let userRows = [];
     for (let i=0;i<usersCount;i++){
-        userRows.push(<TableRow index={i} key={i} name={users[i].name} lastname={users[i].lastname}/>);
+        userRows.push(<TableRow id={users[i].id} index={i} key={i} name={users[i].name} lastname={users[i].lastname}/>);
     }
     return <table className="table">
         <thead>

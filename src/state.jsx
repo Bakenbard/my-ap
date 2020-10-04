@@ -8,7 +8,6 @@ const user = {
     avatar: "https://copypast.ru/fotografii/foto_zhivotnih/jivotnye_v_obraze_znamenitostej_0_/jivotnye_v_obraze_znamenitostej_0_027.jpg"
 }
 
-
 const users = {
     0: { name: "Кир", lastname: "Захарьин", id:2 },
     1: { name: "Мстислав", lastname: "Мамкин", id:34 },

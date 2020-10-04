@@ -23,8 +23,7 @@ const Friends = (props)=>{
         </tr>
         </thead>
         <tbody>
-
-
+        {userRows}
         </tbody>
     </table>
 }
